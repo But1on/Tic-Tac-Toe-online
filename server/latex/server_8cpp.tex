@@ -1,0 +1,67 @@
+\doxysection{Файл server.\+cpp}
+\hypertarget{server_8cpp}{}\label{server_8cpp}\index{server.cpp@{server.cpp}}
+
+
+Файл сервера для игры в "{}Крестики-\/нолики"{}.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$winsock2.\+h$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+\doxysubsubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{server_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Главная функция сервера для игры "{}Крестики-\/нолики"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Файл сервера для игры в "{}Крестики-\/нолики"{}. 
+
+
+
+\doxysubsection{Функции}
+\Hypertarget{server_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{server_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+\index{server.cpp@{server.cpp}!main@{main}}
+\index{main@{main}!server.cpp@{server.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Главная функция сервера для игры "{}Крестики-\/нолики"{}. 
+
+Инициализирует Winsock, создает серверный сокет, принимает входящие соединения от клиентов, обменивается сообщениями между клиентами и управляет игровым процессом.
+
+\begin{DoxyReturn}{Возвращает}
+int Код возврата программы\+: 0 при успешном выполнении, 1 при ошибке. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Аргументы}
+{\em wsa\+Data} & Структура данных для Winsock\\
+\hline
+{\em server\+Socket} & Сокет сервера \\
+\hline
+{\em client\+Socket1} & Сокет первого клиента \\
+\hline
+{\em client\+Socket2} & Сокет второго клиента @paramclient\+Socket\+\_\+e Временный сокет для обмена\\
+\hline
+{\em server} & Структура адреса сервера \\
+\hline
+{\em client1} & Структура адреса первого клиента \\
+\hline
+{\em client2} & Структура адреса второго клиента\\
+\hline
+{\em client\+Size} & Размер структуры адреса клиента \\
+\hline
+{\em choose\+\_\+a} & Выбор первого клиента \\
+\hline
+{\em choose\+\_\+b} & Выбор второго клиента\\
+\hline
+{\em message} & Буфер для сообщений от клиентов \\
+\hline
+{\em recv\+\_\+size} & Размер полученного сообщения\\
+\hline
+\end{DoxyParams}
