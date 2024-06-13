@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Client12: Файл Client12.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Client12
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle"><div class="title">Файл Client12.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Файл клиента для игры в "Крестики-нолики".  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;winsock2.h&gt;</code><br />
+<code>#include &lt;ws2tcpip.h&gt;</code><br />
+<code>#include &lt;cstring&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;sstream&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a2cb823d4b4ae06c3232a38b049c4facc" id="r_a2cb823d4b4ae06c3232a38b049c4facc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_client12_8cpp.html#a2cb823d4b4ae06c3232a38b049c4facc">drawBoard</a> (char board[3][3])</td></tr>
+<tr class="memdesc:a2cb823d4b4ae06c3232a38b049c4facc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отрисовка игрового поля игры "Крестики-нолики".  <br /></td></tr>
+<tr class="separator:a2cb823d4b4ae06c3232a38b049c4facc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a042d1aefe601fb84d345bf8e20bfaf18" id="r_a042d1aefe601fb84d345bf8e20bfaf18"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_client12_8cpp.html#a042d1aefe601fb84d345bf8e20bfaf18">checkWin</a> (char board[3][3], char player)</td></tr>
+<tr class="separator:a042d1aefe601fb84d345bf8e20bfaf18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_client12_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Главная функция программы.  <br /></td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Файл клиента для игры в "Крестики-нолики". </p>
+</div><h2 class="groupheader">Функции</h2>
+<a id="a042d1aefe601fb84d345bf8e20bfaf18" name="a042d1aefe601fb84d345bf8e20bfaf18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a042d1aefe601fb84d345bf8e20bfaf18">&#9670;&#160;</a></span>checkWin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool checkWin </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>board</em>[3][3], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>player</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">board</td><td>Игровое поле, представленое в виде двумерного массива. </td></tr>
+    <tr><td class="paramname">player</td><td>Представляет собой символ игрока "X" или "O", по которому проверяется выигрыш</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>bool Функция возвращает true, если кто-то из игроков выполнил выигрышную комбинацию, в противном случае false. </dd></dl>
+
+</div>
+</div>
+<a id="a2cb823d4b4ae06c3232a38b049c4facc" name="a2cb823d4b4ae06c3232a38b049c4facc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cb823d4b4ae06c3232a38b049c4facc">&#9670;&#160;</a></span>drawBoard()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void drawBoard </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>board</em>[3][3]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Отрисовка игрового поля игры "Крестики-нолики". </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">board</td><td>Игровое поле, представленое в виде двумерного массива.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Выводит в консоль текущее состояние игрового поля. </dd></dl>
+
+</div>
+</div>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Главная функция программы. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>int Возвращает 0 при успешном выполнении, 1 при ошибке. </dd></dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wsaData</td><td>Структура данных Winsock </td></tr>
+    <tr><td class="paramname">s</td><td>Сокет для подключаения к серверу </td></tr>
+    <tr><td class="paramname">server</td><td>Структура адреса сервера </td></tr>
+    <tr><td class="paramname">server_reply</td><td>Буфер для ответа сервера </td></tr>
+    <tr><td class="paramname">recv_size</td><td>Размер ответа от сервера </td></tr>
+    <tr><td class="paramname">choose</td><td>Выбор роли H или M </td></tr>
+    <tr><td class="paramname">message</td><td>Инициализация сообщения </td></tr>
+    <tr><td class="paramname">a</td><td>Ввод перед выходом </td></tr>
+    <tr><td class="paramname">count_</td><td>Количество ходов </td></tr>
+    <tr><td class="paramname">board</td><td>Игровое поле </td></tr>
+    <tr><td class="paramname">player</td><td>Текущий игрок X или O </td></tr>
+    <tr><td class="paramname">x_get</td><td>Координаты полученого хода X </td></tr>
+    <tr><td class="paramname">y_get</td><td>Координаты полученого хода Y </td></tr>
+    <tr><td class="paramname">x_send</td><td>Координаты отправляемого хода X </td></tr>
+    <tr><td class="paramname">y_send</td><td>Координаты отправляемого хода Y</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>&lt;Параметры сервера</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">server</td><td>Переменная для того, что будет использовать сеть для работы с IPv4, а также указания порта, на котором сервер принимает соединения</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>&lt; Отправка выбора</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">choose_send</td><td>Временная переменная для отправки выбора пользователя на сервер</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>
