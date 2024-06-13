@@ -1,0 +1,124 @@
+\doxysection{Файл Client12.\+cpp}
+\hypertarget{_client12_8cpp}{}\label{_client12_8cpp}\index{Client12.cpp@{Client12.cpp}}
+
+
+Файл клиента для игры в "{}Крестики-\/нолики"{}.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$winsock2.\+h$>$}\newline
+{\ttfamily \#include $<$ws2tcpip.\+h$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+\doxysubsubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_client12_8cpp_a2cb823d4b4ae06c3232a38b049c4facc}{draw\+Board}} (char board\mbox{[}3\mbox{]}\mbox{[}3\mbox{]})
+\begin{DoxyCompactList}\small\item\em Отрисовка игрового поля игры "{}Крестики-\/нолики"{}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_client12_8cpp_a042d1aefe601fb84d345bf8e20bfaf18}{check\+Win}} (char board\mbox{[}3\mbox{]}\mbox{[}3\mbox{]}, char player)
+\item 
+int \mbox{\hyperlink{_client12_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Главная функция программы. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Файл клиента для игры в "{}Крестики-\/нолики"{}. 
+
+
+
+\doxysubsection{Функции}
+\Hypertarget{_client12_8cpp_a042d1aefe601fb84d345bf8e20bfaf18}\label{_client12_8cpp_a042d1aefe601fb84d345bf8e20bfaf18} 
+\index{Client12.cpp@{Client12.cpp}!checkWin@{checkWin}}
+\index{checkWin@{checkWin}!Client12.cpp@{Client12.cpp}}
+\doxysubsubsection{\texorpdfstring{checkWin()}{checkWin()}}
+{\footnotesize\ttfamily bool check\+Win (\begin{DoxyParamCaption}\item[{char}]{board\mbox{[}3\mbox{]}\mbox{[}3\mbox{]},  }\item[{char}]{player }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Аргументы}
+{\em board} & Игровое поле, представленое в виде двумерного массива. \\
+\hline
+{\em player} & Представляет собой символ игрока "{}\+X"{} или "{}\+O"{}, по которому проверяется выигрыш\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+bool Функция возвращает true, если кто-\/то из игроков выполнил выигрышную комбинацию, в противном случае false. 
+\end{DoxyReturn}
+\Hypertarget{_client12_8cpp_a2cb823d4b4ae06c3232a38b049c4facc}\label{_client12_8cpp_a2cb823d4b4ae06c3232a38b049c4facc} 
+\index{Client12.cpp@{Client12.cpp}!drawBoard@{drawBoard}}
+\index{drawBoard@{drawBoard}!Client12.cpp@{Client12.cpp}}
+\doxysubsubsection{\texorpdfstring{drawBoard()}{drawBoard()}}
+{\footnotesize\ttfamily void draw\+Board (\begin{DoxyParamCaption}\item[{char}]{board\mbox{[}3\mbox{]}\mbox{[}3\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Отрисовка игрового поля игры "{}Крестики-\/нолики"{}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em board} & Игровое поле, представленое в виде двумерного массива.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Выводит в консоль текущее состояние игрового поля. 
+\end{DoxyReturn}
+\Hypertarget{_client12_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{_client12_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+\index{Client12.cpp@{Client12.cpp}!main@{main}}
+\index{main@{main}!Client12.cpp@{Client12.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Главная функция программы. 
+
+\begin{DoxyReturn}{Возвращает}
+int Возвращает 0 при успешном выполнении, 1 при ошибке. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Аргументы}
+{\em wsa\+Data} & Структура данных Winsock \\
+\hline
+{\em s} & Сокет для подключаения к серверу \\
+\hline
+{\em server} & Структура адреса сервера \\
+\hline
+{\em server\+\_\+reply} & Буфер для ответа сервера \\
+\hline
+{\em recv\+\_\+size} & Размер ответа от сервера \\
+\hline
+{\em choose} & Выбор роли H или M \\
+\hline
+{\em message} & Инициализация сообщения \\
+\hline
+{\em a} & Ввод перед выходом \\
+\hline
+{\em count\+\_\+} & Количество ходов \\
+\hline
+{\em board} & Игровое поле \\
+\hline
+{\em player} & Текущий игрок X или O \\
+\hline
+{\em x\+\_\+get} & Координаты полученого хода X \\
+\hline
+{\em y\+\_\+get} & Координаты полученого хода Y \\
+\hline
+{\em x\+\_\+send} & Координаты отправляемого хода X \\
+\hline
+{\em y\+\_\+send} & Координаты отправляемого хода Y\\
+\hline
+\end{DoxyParams}
+\texorpdfstring{$<$}{<}Параметры сервера
+
+
+\begin{DoxyParams}{Аргументы}
+{\em server} & Переменная для того, что будет использовать сеть для работы с IPv4, а также указания порта, на котором сервер принимает соединения\\
+\hline
+\end{DoxyParams}
+\texorpdfstring{$<$}{<} Отправка выбора
+
+
+\begin{DoxyParams}{Аргументы}
+{\em choose\+\_\+send} & Временная переменная для отправки выбора пользователя на сервер\\
+\hline
+\end{DoxyParams}
