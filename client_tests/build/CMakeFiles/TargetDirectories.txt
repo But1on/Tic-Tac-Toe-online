@@ -1,0 +1,9 @@
+C:/Users/User/source/repos/Client12/Client12/build/CMakeFiles/TicTacToe.dir
+C:/Users/User/source/repos/Client12/Client12/build/CMakeFiles/tests.dir
+C:/Users/User/source/repos/Client12/Client12/build/CMakeFiles/test.dir
+C:/Users/User/source/repos/Client12/Client12/build/CMakeFiles/edit_cache.dir
+C:/Users/User/source/repos/Client12/Client12/build/CMakeFiles/rebuild_cache.dir
+C:/Users/User/source/repos/Client12/Client12/build/doctest/CMakeFiles/doctest.dir
+C:/Users/User/source/repos/Client12/Client12/build/doctest/CMakeFiles/test.dir
+C:/Users/User/source/repos/Client12/Client12/build/doctest/CMakeFiles/edit_cache.dir
+C:/Users/User/source/repos/Client12/Client12/build/doctest/CMakeFiles/rebuild_cache.dir

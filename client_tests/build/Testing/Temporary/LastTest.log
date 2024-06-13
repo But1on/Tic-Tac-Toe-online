@@ -1,0 +1,45 @@
+Start testing: Jun 13 15:36 RTZ 2 (çèìà)
+----------------------------------------------------------
+1/1 Testing: tests
+1/1 Test: tests
+Command: "C:/Users/User/source/repos/Client12/Client12/build/tests.exe" "-force-colors" "-d"
+Directory: C:/Users/User/source/repos/Client12/Client12/build
+"tests" start time: Jun 13 15:36 RTZ 2 (çèìà)
+Output:
+----------------------------------------------------------
+[doctest] doctest version is "2.4.11"
+[doctest] run with "--help" for options
+===============================================================================
+C:\Users\User\source\repos\Client12\Client12\test_Client12.cpp:9:
+TEST CASE:  afaf
+
+0.000004 s: afaf
+===============================================================================
+C:\Users\User\source\repos\Client12\Client12\test_Client12.cpp:13:
+TEST CASE:  Testing checkWin function for player X
+
+C:\Users\User\source\repos\Client12\Client12\test_Client12.cpp:22: ERROR: CHECK( checkWin(no_win_board, 'X') == false ) is NOT correct!
+  values: CHECK( true == false )
+
+0.000053 s: Testing checkWin function for player X
+===============================================================================
+C:\Users\User\source\repos\Client12\Client12\test_Client12.cpp:25:
+TEST CASE:  Testing checkWin function for player O
+
+C:\Users\User\source\repos\Client12\Client12\test_Client12.cpp:34: ERROR: CHECK( checkWin(no_win_board, 'O') == false ) is NOT correct!
+  values: CHECK( true == false )
+
+0.000023 s: Testing checkWin function for player O
+===============================================================================
+[doctest] test cases: 3 | 1 passed | 2 failed | 0 skipped
+[doctest] assertions: 5 | 3 passed | 2 failed |
+[doctest] Status: FAILURE!
+<end of output>
+Test time =   0.08 sec
+----------------------------------------------------------
+Test Failed.
+"tests" end time: Jun 13 15:36 RTZ 2 (çèìà)
+"tests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jun 13 15:36 RTZ 2 (çèìà)
